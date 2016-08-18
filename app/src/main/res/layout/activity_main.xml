@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    tools:context="com.aashanvit.iiitd.assign1.MainActivity">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ques"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Is this a Prime Number ?"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="italic|bold"
+        />
+    <TextView
+        android:id="@+id/prime"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ques"
+        android:text=" "
+        android:textColor="#ff0000"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic|bold"
+        />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/prime"
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/b1"
+        android:layout_below="@id/prime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YES"
+        android:onClick="OnClickYes"
+
+        />
+    <Button
+
+        android:id="@+id/b2"
+        android:layout_below="@id/prime"
+        android:layout_toRightOf ="@id/b1"
+        android:layout_marginLeft="80dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO"
+        android:onClick="OnClickNo"
+
+        />
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/b3"
+        android:layout_below="@id/ll"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="   NEXT PRIME   "
+        android:textSize="20sp"
+        android:background="#3F51B5"
+        android:onClick="OnClickNextPrime"
+        />
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
